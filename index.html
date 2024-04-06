@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -24,82 +25,36 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-light aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-light"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu backgroundgrey">
-                  <li><a class="dropdown-item text-light" href="#">Action</a></li>
-                  <li><a class="dropdown-item text-light" href="#">Another action</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <div class="d-flex p-2">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
+            <form class="d-flex" role="search" id="a">
+              <div class="d-flex p-2 align-items-center">
+                <input class="form-control px-3" type="text" placeholder="Search" aria-label="Search">
               </div>
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
             </form>
+            <button class="btn btn-outline-success px-0" id="srchbtn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+            <a id="favorites" href="#">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            <div class="dropdown ms-2">
+              <a class="dropdown-toggle" href="#" id="profiletext" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user-circle" id="profileicon"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profiletext">
+                <li><a class="dropdown-item">example@email.com</a></li>
+                <li><a class="dropdown-item" href="change_password.html">Change Password</a></li>
+                <li><a class="dropdown-item" href="logout.html">Sign Out</a></li>
+              </ul>
+            </div>
+            <a id="cart" href="#"> 
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="Carrusel/fot1.png" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="Carrusel/fot2.png" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="Carrusel/fot3.png" class="d-block w-100" alt="..." />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    
     </main>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
