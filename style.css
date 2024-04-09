@@ -4,6 +4,7 @@ body {
 
 header {
     background-color: #3c096c;
+    margin-bottom: 10px;
 }
 
 main {
@@ -125,7 +126,7 @@ footer {
 }
 
 #bottom {
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(235, 235, 235);
     margin-bottom: 10px;
     height: 700px;
 }
@@ -175,4 +176,13 @@ h4 {
     bottom: 0;
     left: 0;
     background-color: #ccc;
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+}
+
+#displayProduct {
+    border: 1px solid #000000;
 }
