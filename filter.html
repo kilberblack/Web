@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        img {
+            height: 280px;
+        }
+
+        body {
+            background: hsl(0, 0, 94%);
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid d-flex justify-content-between">
+          <a class="navbar-brand fw-bold" id="navbar" href="index.html">Navbar</a>
+
+          <form action="filter.html" method="get">
+            <div class="search">
+              <span class="search-icon material-symbols-outlined">search</span>
+              <input class="search-input" type="search" placeholder="Search">
+            </div>
+          </form>
+
+          <div class="d-flex">
+            <a id="favorites" href="#">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            <div class="dropdown ms-2">
+              <a class="dropdown-toggle" href="#" id="profiletext" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user-circle" id="profileicon"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profiletext">
+                <li><a class="dropdown-item">example@email.com</a></li>
+                <li><a class="dropdown-item" href="change_password.html">Change Password</a></li>
+                <li><a class="dropdown-item" href="logout.html">Sign Out</a></li>
+              </ul>
+            </div>
+            <a id="cart" href="#"> 
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+          
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row" id="left">
+              <div class="col-4 d-flex flex-column align-items-start">
+                <div class="text-container">
+                    <h1 class="mb-3" id="filterText">Filter‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </h1>
+                </div>
+                <div class="text-container">
+                    <h3 class="text-muted mb-4">Datos Generales <span class="material-symbols-outlined">
+                        expand_more
+                        </span></h3> 
+                </div>
+                <div class="text-container">
+                    <h3 class="text-muted mb-4">Especificaciones <span class="material-symbols-outlined">
+                        expand_more
+                        </span></h3>
+                </div>
+                <div class="text-container">
+                    <h3 class="text-muted mb-4">Avanzado <span class="material-symbols-outlined">
+                        expand_more
+                        </span> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </h3>
+                </div>
+              </div>
+          
+              <div class="col-8" id="right">
+                <div class="d-flex flex-column h-100">
+                  <div class="bg-gray p-3 mb-3 rounded-2 d-flex align-items-center" id="top">
+                    <div class="search" id="innerSearchBar">
+                      <span class="search-icon material-symbols-outlined">search</span>
+                      <input class="search-input" type="search" placeholder="Search">
+                    </div>
+                    
+                    <div id="ordenar">
+                        Ordenar
+                    </div>
+
+                    <div class="dropdown ml-2">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Destacado
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Opcion 1</a>
+                          <a class="dropdown-item" href="#">Opcion 2</a>
+                          <a class="dropdown-item" href="#">Opcion 3</a>
+                        </div>
+                    </div>
+
+                        <h4 id="izquierda"><</h4>
+                        <h4>1</h4>
+                        <h4>2</h4>
+                        <h4>3</h4>
+                        <h4>></h4>
+
+                  </div>
+                  <div class="flex-grow-1 bg-gray p-3 rounded-2" id="bottom">  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <footer>
+      <h1>a</h1>
+      <h1>a</h1>
+      <h1>a</h1>
+      <h1>a</h1>
+      <h1>a</h1>
+
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
