@@ -362,3 +362,96 @@ footer {
 .no-style {
     text-decoration: none;
 }
+
+.prod-box {
+    height: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+}
+
+.prod-pic {
+    margin: 20px;
+    width: 50%;
+}
+
+.prod-pic img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prod-text {
+    color: var(--text);
+    margin-top: 3vh;
+    width: 50%;
+}
+
+.prod-text p {
+    opacity: 70%;
+}
+
+.prod-text h3 {
+    color: var(--accent);
+}
+
+.prod-text h4 {
+    font-size: 30px;
+}
+
+.info-pago {
+    color: var(--text);
+    text-align: start;
+}
+
+.info-pago h1 {
+    text-align: center;
+    margin-top: 5vh;
+    color: var(--text);
+}
+
+.info-pago input, .form-control{
+    color: var(--text);
+    background-color: var(--background);
+}
+
+.info-pago ::placeholder {
+    color: var(--text);
+    background-color: var(--background);
+}
+
+.info-pago .btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--text);
+}
+
+.final-price {
+    text-align: end;
+}
+
+.pago .btn {
+    background-color: var(--accent);
+    width: 100%;
+}
+
+.info-pago .form-control {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.info-pago .dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.info-pago .dropdown-toggle:hover {
+    border: 1px solid white;
+}
+
+.info-pago .material-symbols-outlined {
+    margin-left: 5px;
+}
