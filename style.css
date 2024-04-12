@@ -63,12 +63,12 @@
 @import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20Old%20Turkic:700|Noto%20Sans%20Old%20Turkic:400');
 
 body {
-  font-family: 'Noto Sans Old Turkic';
+  font-family: 'SF Compact Display', sans-serif;
   font-weight: 400;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Noto Sans Old Turkic';
+  font-family: 'SF Compact Display', sans-serif;
   font-weight: 700;
 }
 
@@ -106,6 +106,22 @@ footer {
     font-size: 30px;
 }
 
+.modal-content{
+    background-color: var(--background-50);
+    color: var(--text-900);
+}
+
+.loginput {
+    background-color: var(--background-50);
+    color: var(--text-900);
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
 #profiletext {
     color: var(--accent-700);
     align-items: baseline;
@@ -131,6 +147,31 @@ footer {
     margin-right: 10px;
     margin-top: 13px;
     font-size: 29px;
+}
+
+.offcanvas {
+    color: var(--text-900);
+    background-color: var(--background-50);
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-900);
+    background-color: var(--background-50);
+}
+
+.btn-close-white {
+    color: var(--text-900);
+}
+
+#ircarro {
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-900);
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 #favorites {
@@ -171,7 +212,7 @@ footer {
 
 .search-input {
     font-size: 16px;
-    font-family: 'Lexend', sans-serif;
+    font-family: 'SF Compact Display', sans-serif;
     color: var(--text-800);
     margin-left: var(--padding);
     outline: none;
@@ -252,7 +293,7 @@ footer {
     color: var(--text);
     display: flex;
     align-items: center;
-    font-family: 'Noto Sans Old Turki';
+    font-family: 'SF Compact Display', sans-serif;
 }
 
 #izquierda h5 {
@@ -417,6 +458,8 @@ footer {
     margin-left: 60px;
 }
 
+/* cart.html */
+
 .no-style {
     text-decoration: none;
 }
@@ -536,6 +579,7 @@ footer {
 }
 
 .fav-item-text {
+    font-family: 'SF Compact Display', sans-serif;
     color: var(--text-900);
     margin-top: 3vh;
     width: 50%;
