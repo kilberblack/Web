@@ -307,6 +307,11 @@ footer {
     border: 1px solid #ddd;
 }
 
+.box:hover {
+    box-shadow: 0 0 20px var(--background-200);
+    outline: 2px solid var(--background-200);
+}
+
 .box::before {
     position: absolute;
     top: 15px;
